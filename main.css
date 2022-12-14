@@ -1,11 +1,11 @@
 body{
     background-color:#f7f1e3 ;
-    font-family:'red october';
+    font-family:'';
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     min-width: 375px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'CENTURY GOTHIC';
     margin:0;
 }
 a{
@@ -24,7 +24,7 @@ ul{
     flex-grow: 1;
     font-weight: 500;
     min-height: 55px;
-
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
 }
 .nav{
     display: flex;
@@ -72,7 +72,7 @@ main{
     gap: 20px;
     background-color: #84817a;
     justify-content: center;
-    box-shadow: 0px 0px 20px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
 }
 .section-name{
     font-size: 30px;
@@ -81,12 +81,16 @@ main{
 }
 
 .bckgrnd-box{
-    background-color: rgb(195, 200, 240);
+    background-color: #d1ccc0;
     min-width: 40vw;
     min-height: 30vh;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
+    overflow-wrap: break-word;
+    max-width: 45vw;
+    box-sizing: border-box;
+    padding: 5px;
 
 }
 .wrapper{
@@ -103,6 +107,7 @@ main{
     justify-content:center;
     /* padding-right: 0; */
     gap: 2%;
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
 }
 .sctn2{
     background-color:#cc8e35;
@@ -110,19 +115,31 @@ main{
     margin: 0;
     margin-top: 20px;
 }
+.sctn3{
+    background-color:#218c74;
+    padding: 1% 5%;
+    margin: 0;
+    margin-top: 20px;
+}
 .character-wrapper{
     background-color:#d1ccc0 ;
-    min-width: 380px;
+    min-width: 330px;
     min-height: 480px;
     border-radius: 15px;
     margin-bottom: 4%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    padding: 1%;
+    border: 10px #aaa69d solid;
 }
 .name{
     background-color: #d1ccc0;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     border-radius: 15px;
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
 }
 .history{
     background-color: #d1ccc0;
@@ -133,7 +150,110 @@ input{
     margin: 0;
     border: 0;
 }
+.first{
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    aspect-ratio: 4/4;
+    width: 60%;
 
+}
+.name-empty{
+    overflow-wrap: break-word;
+    height: 20%;
+}
+.name-raw{
+    background-color: #aaa69d;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+.section-lore{
+    background-color: #33d9b2;
+    display: flex;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    padding: 4% 0%;
+    justify-content:center;
+    /* padding-right: 0; */
+    gap: 2%;
+    box-shadow: 0px 3px 17px -4px rgba(34, 60, 80, 0.59);
+    overflow: auto;
+}
+.location{
+    width: 8vw;
+    height: 6vw;
+    background-color: #ffda79;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 12px -1px rgba(34, 60, 80, 0.2);
+    
+}
+.loc-text{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center;
+    display:; */
+    border-radius: 50px;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+    padding-top: 0;
+}
+.location-plus{
+    width: 3vw;
+    height: 3vw;
+    background-color: #ffda79;
+    border-radius: 100%;
+    box-shadow: 0px 1px 12px -1px rgba(34, 60, 80, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .section-lore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.start{
+    width: 8px;
+    height: 50px;
+    background-color: #ffda79;  
+}
+.line{
+    background-color:#ffda79 ;
+    width: calc(100% - 170px);
+    height: 8px;
+    
+}
+.loc-plus-img{
+    width: 70%;
+}
+[contenteditable]:empty:before {
+    content: attr(data-placeholder);
+    color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    }
 
 
 
@@ -175,5 +295,11 @@ input{
     }
     .wrapper{
         width: 80%;
+    }
+    .character-wrapper{
+        max-width: 330px;
+    }
+    .bckgrnd-box{
+        max-width: 90vw;
     }
 }

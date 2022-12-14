@@ -37,17 +37,13 @@
                     <h2 class="section-name">
                         Предыстория
                     </h2>
-                    <div class="bckgrnd-box" >
-                        <input class='history' type="text" name="input" contenteditable="true">
-                    </div>
+                    <div class="bckgrnd-box" contenteditable="true" data-placeholder="Введите текст"></div>
                 </div>
                 <div class="wrapper">
                     <h2 class="section-name">
                         Мир
                     </h2>
-                    <div class="bckgrnd-box" >
-                        <input class='history' type="text" name="input" contenteditable="true">
-                    </div>
+                    <div class="bckgrnd-box" contenteditable="true" data-placeholder="Введите текст"></div>
                 </div>
             </section>
             <h2 class="section-name sctn2">
@@ -55,15 +51,33 @@
             </h2> 
             <section class="characters" id="character">
                 
-                <div class="character-wrapper">
-
+                <div class="character-wrapper first">
+                    <img src="svg/plus-svgrepo-com.svg" alt="plus" class="plus">
                 </div>
 
             </section>
+            <h2 class="section-name sctn3">
+                Сюжет
+            </h2> 
+            <section class="section-lore">
+                <div class="parent" id="nul">
+                    <div class="location" >
+                        <div class="loc-text" contenteditable="true" data-placeholder="событие"></div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="child">
+                        
+                        <div class="location-plus" >
+                            <img src="svg/plus-svgrepo-com.svg" alt="plus" class="loc-plus-img" onclick="upload(event)">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-
         
+
+
 
 
 
